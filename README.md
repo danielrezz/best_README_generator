@@ -7,15 +7,15 @@
 </h3>
 
 <ol>
-    <li><a href="#" style= "text-decoration:none">About the Project</a></li>
-    <li><a href="#" style= "text-decoration:none">Installation</a></li>
-    <li><a href="#" style= "text-decoration:none">Usage</a></li>
-    <li><a href="#" style= "text-decoration:none">Contributing</a></li>
-    <li><a href="#" style= "text-decoration:none">Tests</a></li>
-    <li><a href="#" style= "text-decoration:none">Contact</a></li>
+    <li><a href="#about" style= "text-decoration:none">About the Project</a></li>
+    <li><a href="#installation" style= "text-decoration:none">Installation</a></li>
+    <li><a href="#usage" style= "text-decoration:none">Usage</a></li>
+    <li><a href="#contributing" style= "text-decoration:none">Contributing</a></li>
+    <li><a href="#tests" style= "text-decoration:none">Tests</a></li>
+    <li><a href="#contact" style= "text-decoration:none">Contact</a></li>
 </ol>
     
-<h2>
+<h2 id="about">
     About the Project
 </h2>
     
@@ -70,3 +70,12 @@
 <p>
     Within my portfolio, you will currently find a short site intro and 3 projects I have worked on (one of them being an audio project). My contact information and a short bio are also found here.
 </p>
+
+<h2 id="contact">
+    Contact
+</h2>
+    
+<ul>
+    <li>Github Profile: </li>
+    <li>Email: </li>
+</ul>
