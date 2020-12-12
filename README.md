@@ -37,7 +37,7 @@
     <li>Inquirer</li>
 </ul>
     
-<h2>
+<h2 id="installation">
     Installation
 </h2>
     
@@ -45,7 +45,7 @@
     Within my portfolio, you will currently find a short site intro and 3 projects I have worked on (one of them being an audio project). My contact information and a short bio are also found here.
 </p>
     
-<h2>
+<h2 id="usage">
     Usage
 </h2>
     
@@ -55,7 +55,7 @@
     The main challenge this time around was the Javascript to get the scroll-to-top button working.
 </p>
 
-<h2>
+<h2 id="contributing">
     Contributing
 </h2>
     
@@ -63,7 +63,7 @@
     Within my portfolio, you will currently find a short site intro and 3 projects I have worked on (one of them being an audio project). My contact information and a short bio are also found here.
 </p>
 
-<h2>
+<h2 id="tests">
     Tests
 </h2>
     
