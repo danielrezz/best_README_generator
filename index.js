@@ -3,8 +3,10 @@ const fs = require("fs");
 
 let createTemplate = () => {
     return `<h1>
-    Cool Project Name
+    ${name}
 </h1>
+
+${licenseBadge}
 
 <h3>
     Table of Contents
@@ -25,21 +27,14 @@ let createTemplate = () => {
 </h2>
     
 <p>
-    This here is my updated portfolio. It was all made using HTML and CSS with even a little Javascript. Eventually this portfolio will include all of my work as a web developer and audio engineer.
-</p>
-    
-<img src="Screen Shot 2020-12-07 at 10.33.46 PM.png">
-    
-<p>
-    The way I chose to approach this was simplicity. I wanted to keep things clean and minimal, yet smooth. Orange is my favorite color so I figured using a pastel version mixed with some opacity throughout the site would help accomplish that feeling.
+    ${description}
 </p>
 
 <h3>Built With</h3>
 
 <ul>
-    <li>Bootstrap</li>
-    <li>Javascript</li>
-    <li>Inquirer</li>
+    <li>${builtwith1}</li>
+    <li>${builtwith1}</li>
 </ul>
     
 <h2 id="installation">
@@ -55,9 +50,7 @@ let createTemplate = () => {
 </h2>
     
 <p>
-    There are still plenty of challenges for me when it comes to web development, but I felt much more comfortable working on this the second time around. I was able to go back in and adjust things to sit more naturally, as well as update fonts and features.
-    
-    The main challenge this time around was the Javascript to get the scroll-to-top button working.
+    ${usage}
 </p>
 
 <h2 id="license">
@@ -65,9 +58,7 @@ let createTemplate = () => {
 </h2>
     
 <p>
-    There are still plenty of challenges for me when it comes to web development, but I felt much more comfortable working on this the second time around. I was able to go back in and adjust things to sit more naturally, as well as update fonts and features.
-    
-    The main challenge this time around was the Javascript to get the scroll-to-top button working.
+    Distributed under ${license}. See LICENSE for more information.
 </p>
 
 <h2 id="contributing">
@@ -75,7 +66,7 @@ let createTemplate = () => {
 </h2>
     
 <p>
-    Within my portfolio, you will currently find a short site intro and 3 projects I have worked on (one of them being an audio project). My contact information and a short bio are also found here.
+    ${contribution}
 </p>
 
 <h2 id="tests">
@@ -83,7 +74,7 @@ let createTemplate = () => {
 </h2>
     
 <p>
-    Within my portfolio, you will currently find a short site intro and 3 projects I have worked on (one of them being an audio project). My contact information and a short bio are also found here.
+    ${test}
 </p>
 
 <h2 id="contact">
@@ -91,8 +82,8 @@ let createTemplate = () => {
 </h2>
     
 <ul>
-    <li>Github Profile: </li>
-    <li>Email: </li>
+    <li>Github Profile: https://github.com/${github}</li>
+    <li>Email: ${email}</li>
 </ul>`
 };
 
@@ -108,9 +99,14 @@ let questions = [
     message: "Enter a detailed description about your project.",
     },
     {
-    type: 'input',
-    name: 'builtwith',
-    message: "List 3 technologies used in your project.",
+    type: 'input', //done
+    name: 'builtwith1',
+    message: "List one technology used in your project.",
+    },
+    {
+    type: 'input', //done
+    name: 'builtwith2',
+    message: "List another technology used in your project.",
     },
     {
     type: 'input',
@@ -134,7 +130,7 @@ let questions = [
     message: "How can your project be tested?",
     },
     {
-    type: 'list', //need to add badge
+    type: 'list', //need to add badge based on selection
     name: 'license',
     message: "Please select one of the following licenses for your project.",
     choices: [
