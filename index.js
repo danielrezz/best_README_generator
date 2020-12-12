@@ -98,19 +98,19 @@ let createTemplate = () => {
 
 let questions = [
     {
-    type: 'input',
+    type: 'input', // done
     name: 'name',
     message: "What is the name of your project?",
     },
     {
-    type: 'input',
+    type: 'input', //done
     name: 'description',
     message: "Enter a detailed description about your project.",
     },
     {
     type: 'input',
     name: 'builtwith',
-    message: "List the technologies used in your project.",
+    message: "List 3 technologies used in your project.",
     },
     {
     type: 'input',
@@ -119,33 +119,39 @@ let questions = [
     // default: "No GitHub account!"
     },
     {
-    type: 'input',
+    type: 'input', //done
     name: 'usage',
     message: "How can your project be used?",
     },
     {
-    type: 'input',
+    type: 'input', //done
     name: 'contribution',
     message: "Enter any guidelines on how users can contribute to your project.",
     },
     {
-    type: 'input',
+    type: 'input', //done
     name: 'test',
     message: "How can your project be tested?",
     },
     {
-    type: 'input',
+    type: 'list', //need to add badge
     name: 'license',
     message: "Please select one of the following licenses for your project.",
-    },
+    choices: [
+        'Apache 2.0 License', 
+        'Eclipse Public License 1.0', 
+        'GNU GPL v3',
+        'The MIT License',
+        'The Do What the Fuck You Want to Public License'
+    ]},
     {
-    type: 'input',
+    type: 'input', //done
     name: 'github',
     message: "What is your GitHub username?",
     },
     {
-    type: 'input',
+    type: 'input', //done
     name: 'email',
     message: "What is your email address?",
     },
-]
+];
