@@ -72,8 +72,9 @@ ${licenseBadge(answers)}
 </h2>
     
 <p>
-    Distributed under ${answers.license}. 
-    <br>
+    Distributed under ${answers.license}.
+</p>
+<p>
     Please click on the LICENSE badge at the top for more information.
 </p>
 
