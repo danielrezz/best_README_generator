@@ -73,7 +73,7 @@ ${licenseBadge(answers)}
     
 <p>
     Distributed under ${answers.license}. 
-    </br>
+    <br>
     Please click on the LICENSE badge at the top for more information.
 </p>
 
