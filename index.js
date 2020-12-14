@@ -7,7 +7,7 @@ let createTemplate = (answers) => {
     ${answers.namer}
 </h1>
 
-${licenseBadge}
+${answers.licenseBadge}
 
 <h3>
     Table of Contents
@@ -158,14 +158,15 @@ inquirer
   .then(answers => {
     // console.log(answers);
 
-    if (answers.license === 'Apache 2.0 License') {
-        licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-    };
+    let licenseBadge = answers.license;
 
+    if (answers.license === 'Apache 2.0 License') {
+        licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
+    };
 
     let generateTemplate = createTemplate(answers);
 
-    fs.writeFile("yourProjectREADME.md", generateTemplate, licenseBadge, (err) => {
+    fs.writeFile("yourProjectREADME.md", generateTemplate, (err) => {
         if (err) throw err;
         console.log("You now have the best README ever.");
     });
