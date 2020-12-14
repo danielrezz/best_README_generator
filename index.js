@@ -1,12 +1,12 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-let createTemplate = () => {
+let createTemplate = (answers) => {
     return `<h1>
-    ${name}
+    ${answers.namer}
 </h1>
 
-${licenseBadge}
+${answers.license}
 
 <h3>
     Table of Contents
@@ -27,14 +27,14 @@ ${licenseBadge}
 </h2>
     
 <p>
-    ${description}
+    ${answers.description}
 </p>
 
 <h3>Built With</h3>
 
 <ul>
-    <li>${builtwith1}</li>
-    <li>${builtwith1}</li>
+    <li>${answers.builtwith1}</li>
+    <li>${answers.builtwith2}</li>
 </ul>
     
 <h2 id="installation">
@@ -42,7 +42,7 @@ ${licenseBadge}
 </h2>
     
 <p>
-    Within my portfolio, you will currently find a short site intro and 3 projects I have worked on (one of them being an audio project). My contact information and a short bio are also found here.
+    ${answers.install}
 </p>
     
 <h2 id="usage">
@@ -50,7 +50,7 @@ ${licenseBadge}
 </h2>
     
 <p>
-    ${usage}
+    ${answers.usage}
 </p>
 
 <h2 id="license">
@@ -58,7 +58,7 @@ ${licenseBadge}
 </h2>
     
 <p>
-    Distributed under ${license}. See LICENSE for more information.
+    Distributed under ${answers.license}. See LICENSE for more information.
 </p>
 
 <h2 id="contributing">
@@ -66,7 +66,7 @@ ${licenseBadge}
 </h2>
     
 <p>
-    ${contribution}
+    ${answers.contribution}
 </p>
 
 <h2 id="tests">
@@ -74,7 +74,7 @@ ${licenseBadge}
 </h2>
     
 <p>
-    ${test}
+    ${answers.test}
 </p>
 
 <h2 id="contact">
@@ -82,15 +82,15 @@ ${licenseBadge}
 </h2>
     
 <ul>
-    <li>Github Profile: https://github.com/${github}</li>
-    <li>Email: ${email}</li>
+    <li>Github Profile: https://github.com/${answers.github}</li>
+    <li>Email: ${answers.email}</li>
 </ul>`
 };
 
 let questions = [
     {
     type: 'input', // done
-    name: 'name',
+    name: 'namer',
     message: "What is the name of your project?",
     },
     {
@@ -151,3 +151,20 @@ let questions = [
     message: "What is your email address?",
     },
 ];
+
+inquirer
+.prompt(questions)
+  .then(answers => {
+    // console.log(answers);
+
+    let generateTemplate = createTemplate(answers);
+
+    fs.writeFile("yourProjectREADME.md", generateTemplate, (err) => {
+        if (err) throw err;
+        console.log("You now have the best README ever.");
+    });
+})
+
+  .catch(error => {
+    console.log(error);
+  });
