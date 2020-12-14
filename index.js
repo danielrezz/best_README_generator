@@ -1,12 +1,13 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+
 let createTemplate = (answers) => {
     return `<h1>
     ${answers.namer}
 </h1>
 
-${answers.license}
+${licenseBadge}
 
 <h3>
     Table of Contents
@@ -157,9 +158,14 @@ inquirer
   .then(answers => {
     // console.log(answers);
 
+    if (answers.license === 'Apache 2.0 License') {
+        licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    };
+
+
     let generateTemplate = createTemplate(answers);
 
-    fs.writeFile("yourProjectREADME.md", generateTemplate, (err) => {
+    fs.writeFile("yourProjectREADME.md", generateTemplate, licenseBadge, (err) => {
         if (err) throw err;
         console.log("You now have the best README ever.");
     });
