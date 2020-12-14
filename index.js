@@ -1,6 +1,12 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+let licenseBadge = (answers) => {
+    if (answers.license === 'Apache 2.0 License') {
+        "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    };
+};
+
 
 let createTemplate = (answers) => {
     return `<h1>
@@ -157,12 +163,6 @@ inquirer
 .prompt(questions)
   .then(answers => {
     // console.log(answers);
-
-    let licenseBadge = answers.license;
-
-    if (answers.license === 'Apache 2.0 License') {
-        licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-    };
 
     let generateTemplate = createTemplate(answers);
 
