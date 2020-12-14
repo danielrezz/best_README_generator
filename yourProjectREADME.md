@@ -1,10 +1,8 @@
 <h1>
-    Cool Sample Project #1
+    cool sample project #1
 </h1>
 
-<p style="text-align:center"><a href="https://www.youtube.com" target="_blank">Demo Video</a></p>
-
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 <h2>
     Table of Contents
@@ -25,7 +23,7 @@
 </h2>
     
 <p>
-    This is an app that will revolutionize the world.
+    This is a cool app that will change the world.
 </p>
 
 <h3>Built With</h3>
@@ -40,7 +38,7 @@
 </h2>
     
 <p>
-    1) Invoke application using node index.js; 2) Answers questions as they are prompted; 3) receive the best README file ever
+    invoke, answer questions, receive README
 </p>
     
 <h2 id="usage">
@@ -48,7 +46,7 @@
 </h2>
     
 <p>
-    This generator can be used to save you some time when creating a README for your project. That wayyou never have to start from scratch
+    to save time and effort with every project
 </p>
 
 <h2 id="license">
@@ -56,7 +54,7 @@
 </h2>
     
 <p>
-    Distributed under The Do What the Fuck You Want to Public License.
+    Distributed under Apache 2.0 License.
 </p>
 <p>
     Please click on the LICENSE badge at the top for more information.
@@ -67,7 +65,7 @@
 </h2>
     
 <p>
-    Users can submit pull requests as they see fit for project updates/improvements
+    users can submit pull requests as they see fit
 </p>
 
 <h2 id="tests">
@@ -75,7 +73,7 @@
 </h2>
     
 <p>
-    It can be tested by invoking and using!
+    n/a
 </p>
 
 <h2 id="contact">
@@ -86,5 +84,5 @@
     
 <ul>
     <li>Github Profile: https://github.com/danielrezz</li>
-    <li>Email: danielreza91@yahoo.com</li>
+    <li>Email: danielrezz@email.com</li>
 </ul>

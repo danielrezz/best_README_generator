@@ -7,10 +7,10 @@
 </h2>
 
 <p>
-    This is a README generator designed to help you save time when creating a README file for your project. The professional file is created via command-line based on your responses.
+    This is a README generator designed to help you save time when creating a README file for your project. The professional file is created via command-line based on your responses. You can view a demo video on its functionality <a href="https://youtu.be/5-eObkIZGC4">HERE</a>.
 </p>
 
-<iframe src="https://drive.google.com/file/d/1yF5wDnfY4u1Ws4swdWaa3cW_0_kGpJEp/preview" width="640" height="480"></iframe>
+<img src="Screen Shot 2020-12-14 at 1.56.19 PM.png">
 
 <h2>
     Content
