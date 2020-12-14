@@ -4,9 +4,16 @@ const fs = require("fs");
 let licenseBadge = (answers) => {
     if (answers.license === 'Apache 2.0 License') {
         return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    } else if (answers.license === 'Eclipse Public License 1.0') {
+        return "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)";
+    } else if (answers.license === 'GNU GPL v3') {
+        return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+    } else if (answers.license === 'The MIT License') {
+        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    } else if (answers.license === 'The Do What the Fuck You Want to Public License') {
+        return "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
     };
 };
-
 
 let createTemplate = (answers) => {
     return `<h1>
@@ -65,7 +72,8 @@ ${licenseBadge(answers)}
 </h2>
     
 <p>
-    Distributed under ${answers.license}. See LICENSE for more information.
+    Distributed under ${answers.license}. 
+    Please click on the LICENSE badge at the top for more information.
 </p>
 
 <h2 id="contributing">
@@ -87,6 +95,8 @@ ${licenseBadge(answers)}
 <h2 id="contact">
     Contact
 </h2>
+
+<p>For any questions, please contact via GitHub or email.</p>
     
 <ul>
     <li>Github Profile: https://github.com/${answers.github}</li>
