@@ -3,7 +3,7 @@ const fs = require("fs");
 
 let licenseBadge = (answers) => {
     if (answers.license === 'Apache 2.0 License') {
-        "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
     };
 };
 
@@ -13,7 +13,7 @@ let createTemplate = (answers) => {
     ${answers.namer}
 </h1>
 
-${licenseBadge}
+${licenseBadge(answers)}
 
 <h3>
     Table of Contents
