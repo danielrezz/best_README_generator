@@ -1,12 +1,14 @@
 <h1>
-    Cool project
+    
 </h1>
 
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
+<a href="https://www.youtube.com" target="__blank">Demo Video</a>
 
-<h3>
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+<h2>
     Table of Contents
-</h3>
+</h2>
 
 <ol>
     <li><a href="#about" style= "text-decoration:none">About the Project</a></li>
@@ -23,14 +25,14 @@
 </h2>
     
 <p>
-    it's cool
+    
 </p>
 
 <h3>Built With</h3>
 
 <ul>
-    <li>javascript</li>
-    <li>node</li>
+    <li></li>
+    <li></li>
 </ul>
     
 <h2 id="installation">
@@ -38,7 +40,7 @@
 </h2>
     
 <p>
-    install and use
+    
 </p>
     
 <h2 id="usage">
@@ -46,7 +48,7 @@
 </h2>
     
 <p>
-    to create coiol readmes
+    
 </p>
 
 <h2 id="license">
@@ -54,7 +56,9 @@
 </h2>
     
 <p>
-    Distributed under The Do What the Fuck You Want to Public License. 
+    Distributed under Apache 2.0 License.
+</p>
+<p>
     Please click on the LICENSE badge at the top for more information.
 </p>
 
@@ -63,7 +67,7 @@
 </h2>
     
 <p>
-    n/a
+    
 </p>
 
 <h2 id="tests">
@@ -71,7 +75,7 @@
 </h2>
     
 <p>
-    n/a
+    
 </p>
 
 <h2 id="contact">
@@ -81,6 +85,6 @@
 <p>For any questions, please contact via GitHub or email.</p>
     
 <ul>
-    <li>Github Profile: https://github.com/danielrezz</li>
-    <li>Email: danielrezz@email.com</li>
+    <li>Github Profile: https://github.com/</li>
+    <li>Email: </li>
 </ul>

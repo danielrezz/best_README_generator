@@ -20,11 +20,13 @@ let createTemplate = (answers) => {
     ${answers.namer}
 </h1>
 
+<a href="https://www.youtube.com" target="__blank">Demo Video</a>
+
 ${licenseBadge(answers)}
 
-<h3>
+<h2>
     Table of Contents
-</h3>
+</h2>
 
 <ol>
     <li><a href="#about" style= "text-decoration:none">About the Project</a></li>
