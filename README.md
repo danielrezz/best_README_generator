@@ -10,7 +10,7 @@
     This is a README generator designed to help you save time when creating a README file for your project. The professional file is created via command-line based on your responses.
 </p>
 
-<img src="Screen Shot 2020-12-07 at 10.33.46 PM.png">
+<img src="Screen Shot 2020-12-14 at 1.56.19 PM.png">
 
 <h2>
     Content
