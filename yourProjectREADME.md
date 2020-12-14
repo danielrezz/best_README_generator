@@ -1,5 +1,5 @@
 <h1>
-    Cool Project #1
+    Cool Sample Project #1
 </h1>
 
 <p style="text-align:center"><a href="https://www.youtube.com" target="_blank">Demo Video</a></p>
@@ -25,7 +25,7 @@
 </h2>
     
 <p>
-    This is the coolest project ever that is going to change the world.
+    This is an app that will revolutionize the world.
 </p>
 
 <h3>Built With</h3>
@@ -40,7 +40,7 @@
 </h2>
     
 <p>
-    1) invoke app using node index.js 2) enter information as prompted 3) receive cool readme
+    1) Invoke application using node index.js; 2) Answers questions as they are prompted; 3) receive the best README file ever
 </p>
     
 <h2 id="usage">
@@ -48,7 +48,7 @@
 </h2>
     
 <p>
-    It can be used to save time when building README files for yourself
+    This generator can be used to save you some time when creating a README for your project. That wayyou never have to start from scratch
 </p>
 
 <h2 id="license">
@@ -67,7 +67,7 @@
 </h2>
     
 <p>
-    submit pull requests on bugs or problems as needed
+    Users can submit pull requests as they see fit for project updates/improvements
 </p>
 
 <h2 id="tests">
@@ -75,7 +75,7 @@
 </h2>
     
 <p>
-    invoke and see if you like it!
+    It can be tested by invoking and using!
 </p>
 
 <h2 id="contact">
@@ -86,5 +86,5 @@
     
 <ul>
     <li>Github Profile: https://github.com/danielrezz</li>
-    <li>Email: danielrezz@email.com</li>
+    <li>Email: danielreza91@yahoo.com</li>
 </ul>
