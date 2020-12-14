@@ -20,8 +20,6 @@ let createTemplate = (answers) => {
     ${answers.namer}
 </h1>
 
-<p style="text-align:center"><a href="https://www.youtube.com" target="_blank">Demo Video</a></p>
-
 ${licenseBadge(answers)}
 
 <h2>
