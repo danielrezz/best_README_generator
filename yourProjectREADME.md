@@ -2,7 +2,7 @@
     
 </h1>
 
-<a href="https://www.youtube.com" target="_blank" style="text-align:center">Demo Video</a>
+<p style="text-align:center"><a href="https://www.youtube.com" target="_blank">Demo Video</a></p>
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
